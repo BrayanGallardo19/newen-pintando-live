@@ -1,0 +1,15 @@
+{
+  "id": 10,
+  "order": 10,
+  "slug": "d-a-de-pesca-magikarp",
+  "name": "Día de pesca: Magikarp",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Una jornada de pesca con Magikarp como protagonista. La ilustración transforma un momento cotidiano en una escena lúdica del universo Pokémon.",
+  "images": [
+    "/assets/art/d-a-de-pesca-magikarp.webp"
+  ],
+  "options": [],
+  "videos": []
+}

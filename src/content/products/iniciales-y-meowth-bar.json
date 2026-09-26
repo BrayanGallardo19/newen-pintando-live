@@ -1,0 +1,15 @@
+{
+  "id": 14,
+  "order": 14,
+  "slug": "iniciales-y-meowth-bar",
+  "name": "Los iniciales y Meowth en el bar",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Los Pokémon iniciales se encuentran con Meowth en un bar imaginado por Newen. Una escena coral llena de personajes y pequeños encuentros.",
+  "images": [
+    "/assets/art/iniciales-y-meowth-bar.webp"
+  ],
+  "options": [],
+  "videos": []
+}

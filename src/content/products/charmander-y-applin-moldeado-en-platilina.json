@@ -1,0 +1,32 @@
+{
+  "id": 4,
+  "order": 4,
+  "slug": "charmander-y-applin-moldeado-en-platilina",
+  "name": "Charmander y Applin",
+  "price": "Precio por confirmar",
+  "category": "tecnicas-artesanales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Charmander y Applin toman forma en una composición hecha con plastilina. El relieve y los detalles artesanales aportan otra textura a la escena.",
+  "images": [
+    "/assets/art/charmander-y-applin-moldeado-en-platilina.webp"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/charmander-applin-variante-carta.webp"
+    },
+    {
+      "label": "Carta full art",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/charmander-applin-variante-applin-full-art.png"
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/video/charmander-applin.mp4",
+      "poster": "/assets/art/charmander-y-applin-moldeado-en-platilina.webp",
+      "label": "Video de Charmander y Applin (moldeado en plastilina)"
+    }
+  ]
+}

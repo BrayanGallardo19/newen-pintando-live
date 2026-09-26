@@ -1,0 +1,24 @@
+{
+  "name": "Newen Pintando",
+  "tagline": "Ilustración desde el sur",
+  "whatsapp": "56957864263",
+  "instagram": "https://www.instagram.com/newen_pintand0/",
+  "instagramLabel": "@newen_pintand0",
+  "logo": "/assets/logo-newen.png",
+  "heroLandscape": "/assets/hero-lago-sur.webp",
+  "heroTitle": "Arte que conecta",
+  "heroAccent": "con Chile.",
+  "heroText": "Ilustraciones que reúnen videojuegos, anime y paisajes chilenos en obras con una mirada propia.",
+  "heroImages": [
+    "/assets/art/gyarados-rojo-valdivia.webp",
+    "/assets/art/mew-regirock-torres-del-paine-mew-adventures-7.webp",
+    "/assets/art/pikachu-gigamax-torre-entel.webp"
+  ],
+  "showcaseVideos": [
+    {
+      "src": "/assets/video/muestra-general.mp4",
+      "label": "Muestra general de trabajos",
+      "poster": "/assets/muestra-general-poster.webp"
+    }
+  ]
+}

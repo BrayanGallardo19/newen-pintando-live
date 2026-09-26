@@ -1,0 +1,15 @@
+{
+  "id": 35,
+  "order": 35,
+  "slug": "wobbuffet-y-psyduck",
+  "name": "Wobbuffet y Psyduck",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Wobbuffet y Psyduck se encuentran en una ilustración de humor y gestos expresivos. La dupla le da personalidad propia a la escena.",
+  "images": [
+    "/assets/art/wobbuffet-y-psyduck.webp"
+  ],
+  "options": [],
+  "videos": []
+}

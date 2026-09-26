@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "order": 1,
+  "slug": "budew-infernal",
+  "name": "Budew infernal",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Budew protagoniza una escena de energía intensa y tonos ardientes. La ternura del personaje contrasta con el ambiente oscuro de esta ilustración.",
+  "images": [
+    "/assets/art/budew-infernal.webp"
+  ],
+  "options": [],
+  "videos": []
+}

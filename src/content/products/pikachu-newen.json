@@ -1,0 +1,15 @@
+{
+  "id": 31,
+  "order": 31,
+  "slug": "pikachu-newen",
+  "name": "Pikachu Newen",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Pikachu recibe una interpretación propia de Newen Pintando. Una obra que pone al personaje conocido al centro de su universo visual.",
+  "images": [
+    "/assets/art/pikachu-newen.webp"
+  ],
+  "options": [],
+  "videos": []
+}

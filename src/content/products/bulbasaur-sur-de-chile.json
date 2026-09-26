@@ -1,0 +1,15 @@
+{
+  "id": 2,
+  "order": 2,
+  "slug": "bulbasaur-sur-de-chile",
+  "name": "Bulbasaur, sur de Chile",
+  "price": "Precio por confirmar",
+  "category": "chile-ilustrado",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Bulbasaur se encuentra con la naturaleza del sur de Chile en una escena que mezcla el universo Pokémon con paisajes y colores de nuestra tierra.",
+  "images": [
+    "/assets/art/bulbasaur-sur-de-chile.webp"
+  ],
+  "options": [],
+  "videos": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": 12,
+  "order": 12,
+  "slug": "festival-de-playa-plastilina",
+  "name": "Festival de playa",
+  "price": "Precio por confirmar",
+  "category": "tecnicas-artesanales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Una fiesta de playa construida en plastilina. Las figuras modeladas, el color y el escenario de verano muestran el lado más artesanal de Newen.",
+  "images": [
+    "/assets/art/festival-de-playa-plastilina.webp"
+  ],
+  "options": [],
+  "videos": []
+}

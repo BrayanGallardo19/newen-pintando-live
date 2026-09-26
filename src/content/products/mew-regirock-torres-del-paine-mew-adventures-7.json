@@ -1,0 +1,21 @@
+{
+  "id": 25,
+  "order": 25,
+  "slug": "mew-regirock-torres-del-paine-mew-adventures-7",
+  "name": "Mew y Regirock en Torres del Paine, Mew Adventures 7",
+  "price": "Precio por confirmar",
+  "category": "mew-adventures",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Mew y Regirock llegan a Torres del Paine. Las formaciones del paisaje patagónico acompañan el encuentro entre ambos personajes.",
+  "images": [
+    "/assets/art/mew-regirock-torres-del-paine-mew-adventures-7.webp"
+  ],
+  "options": [],
+  "videos": [
+    {
+      "src": "/assets/video/mew-regirock-torres-del-paine.mp4",
+      "poster": "/assets/art/mew-regirock-torres-del-paine-mew-adventures-7.webp",
+      "label": "Video de Mew y Regirock en Torres del Paine, Mew Adventures 7"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 30,
+  "order": 30,
+  "slug": "pikachu-gigamax-torre-entel",
+  "name": "Pikachu Gigamax, Torre Entel",
+  "price": "Precio por confirmar",
+  "category": "chile-ilustrado",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Pikachu Gigamax aparece junto a la Torre Entel de Santiago. Su tamaño transforma un símbolo urbano chileno en una escena fantástica.",
+  "images": [
+    "/assets/art/pikachu-gigamax-torre-entel.webp"
+  ],
+  "options": [],
+  "videos": [
+    {
+      "src": "/assets/video/video-pikachu-gigamax-torre-entel.mp4",
+      "poster": "/assets/art/pikachu-gigamax-torre-entel.webp",
+      "label": "Video de Pikachu Gigamax, Torre Entel"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": 26,
+  "order": 26,
+  "slug": "mewtwo-experimento",
+  "name": "El experimento de Mewtwo",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Mewtwo despierta en una cámara de laboratorio rodeada de cables y monitores. El blanco y negro acentúa el clima de experimento.",
+  "images": [
+    "/assets/art/mewtwo-experimento.webp"
+  ],
+  "options": [],
+  "videos": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": 11,
+  "order": 11,
+  "slug": "eevee-y-cubone",
+  "name": "Eevee y Cubone",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Eevee y Cubone se reúnen en una ilustración centrada en su encuentro. Sus personalidades diferentes dan vida a una escena cercana y expresiva.",
+  "images": [
+    "/assets/art/eevee-y-cubone.webp"
+  ],
+  "options": [],
+  "videos": []
+}

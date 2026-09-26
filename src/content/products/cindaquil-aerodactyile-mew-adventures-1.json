@@ -1,0 +1,15 @@
+{
+  "id": 5,
+  "order": 5,
+  "slug": "cindaquil-aerodactyile-mew-adventures-1",
+  "name": "Cyndaquil y Aerodactyl, Mew Adventures 1",
+  "price": "Precio por confirmar",
+  "category": "mew-adventures",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Cyndaquil y Aerodactyl abren este recorrido de Mew Adventures. Una escena que reúne personajes de distintas eras en una misma aventura.",
+  "images": [
+    "/assets/art/cindaquil-aerodactyile-mew-adventures-1.webp"
+  ],
+  "options": [],
+  "videos": []
+}

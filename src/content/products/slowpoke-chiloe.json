@@ -1,0 +1,21 @@
+{
+  "id": 33,
+  "order": 33,
+  "slug": "slowpoke-chiloe",
+  "name": "Slowpoke, Chiloé",
+  "price": "Precio por confirmar",
+  "category": "chile-ilustrado",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Slowpoke se instala en un paisaje inspirado en Chiloé. La calma del personaje acompaña el ambiente isleño de esta escena chilena.",
+  "images": [
+    "/assets/art/slowpoke-chiloe.webp"
+  ],
+  "options": [],
+  "videos": [
+    {
+      "src": "/assets/video/video-slowpoke-pescando.mp4",
+      "poster": "/assets/art/slowpoke-chiloe.webp",
+      "label": "Video de Slowpoke, Chiloé"
+    }
+  ]
+}

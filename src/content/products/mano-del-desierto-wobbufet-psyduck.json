@@ -1,0 +1,15 @@
+{
+  "id": 20,
+  "order": 20,
+  "slug": "mano-del-desierto-wobbufet-psyduck",
+  "name": "Mano del Desierto, Wobbuffet y Psyduck",
+  "price": "Precio por confirmar",
+  "category": "chile-ilustrado",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Wobbuffet y Psyduck visitan la Mano del Desierto. El monumento del norte de Chile se convierte en escenario para un encuentro inesperado.",
+  "images": [
+    "/assets/art/mano-del-desierto-wobbufet-psyduck.webp"
+  ],
+  "options": [],
+  "videos": []
+}

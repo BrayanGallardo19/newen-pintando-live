@@ -1,0 +1,27 @@
+{
+  "id": 13,
+  "order": 13,
+  "slug": "gyarados-rojo-valdivia",
+  "name": "Gyarados rojo, Valdivia",
+  "price": "Precio por confirmar",
+  "category": "chile-ilustrado",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Gyarados rojo irrumpe en un paisaje inspirado en Valdivia. La obra combina la fuerza del Pokémon con una ciudad reconocible del sur chileno.",
+  "images": [
+    "/assets/art/gyarados-rojo-valdivia.webp"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/gyarados-rojo-valdivia-variante-carta.png"
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/video/video-gyarados-rojo-valdivia.mp4",
+      "poster": "/assets/art/gyarados-rojo-valdivia.webp",
+      "label": "Video de Gyarados rojo, Valdivia"
+    }
+  ]
+}

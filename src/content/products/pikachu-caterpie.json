@@ -1,0 +1,21 @@
+{
+  "id": 29,
+  "order": 29,
+  "slug": "pikachu-caterpie",
+  "name": "Pikachu y Caterpie",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Pikachu y Caterpie comparten una escena sencilla y cercana. Los personajes y sus gestos son el centro de esta ilustración de Newen.",
+  "images": [
+    "/assets/art/pikachu-caterpie.webp"
+  ],
+  "options": [],
+  "videos": [
+    {
+      "src": "/assets/video/pikachu-caterpie.mp4",
+      "poster": "/assets/art/pikachu-caterpie.webp",
+      "label": "Video de Pikachu y Caterpie"
+    }
+  ]
+}

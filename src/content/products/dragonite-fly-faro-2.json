@@ -1,0 +1,15 @@
+{
+  "id": 9,
+  "order": 9,
+  "slug": "dragonite-fly-faro-2",
+  "name": "Dragonite sobrevolando el faro",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Dragonite vuelve a encontrarse con el faro en una nueva composición. El vuelo y la referencia costera aportan movimiento a la escena.",
+  "images": [
+    "/assets/art/dragonite-fly-faro-2.webp"
+  ],
+  "options": [],
+  "videos": []
+}

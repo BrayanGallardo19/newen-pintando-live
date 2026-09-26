@@ -1,0 +1,15 @@
+{
+  "id": 8,
+  "order": 8,
+  "slug": "dragonite-del-faro",
+  "name": "Dragonite junto al faro",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Dragonite y un faro comparten el centro de esta ilustración. Una imagen que une la calidez del personaje con la atmósfera de la costa.",
+  "images": [
+    "/assets/art/dragonite-del-faro.webp"
+  ],
+  "options": [],
+  "videos": []
+}

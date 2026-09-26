@@ -1,0 +1,15 @@
+{
+  "id": 3,
+  "order": 3,
+  "slug": "charcadet-y-evos-castillo-en-ruinas",
+  "name": "Charcadet y sus evoluciones en el castillo",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Charcadet y sus evoluciones recorren las ruinas de un castillo. La arquitectura y el clima de aventura construyen el escenario de esta obra.",
+  "images": [
+    "/assets/art/charcadet-y-evos-castillo-en-ruinas.webp"
+  ],
+  "options": [],
+  "videos": []
+}

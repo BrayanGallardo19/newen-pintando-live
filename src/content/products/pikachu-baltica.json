@@ -1,0 +1,15 @@
+{
+  "id": 28,
+  "order": 28,
+  "slug": "pikachu-baltica",
+  "name": "Pikachu Báltica",
+  "price": "Precio por confirmar",
+  "category": "chile-ilustrado",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Pikachu se encuentra con un guiño a Báltica, un ícono cotidiano de Chile. La mezcla reúne cultura popular y universo Pokémon.",
+  "images": [
+    "/assets/art/pikachu-baltica.webp"
+  ],
+  "options": [],
+  "videos": []
+}

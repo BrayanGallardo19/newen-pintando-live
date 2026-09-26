@@ -1,0 +1,15 @@
+{
+  "id": 32,
+  "order": 32,
+  "slug": "pikachu-squirtle-completo",
+  "name": "Pikachu y Squirtle",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Pikachu y Squirtle comparten protagonismo en una composición de personajes. Sus colores y formas se encuentran en esta ilustración.",
+  "images": [
+    "/assets/art/pikachu-squirtle-completo.webp"
+  ],
+  "options": [],
+  "videos": []
+}

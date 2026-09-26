@@ -1,0 +1,15 @@
+{
+  "id": 18,
+  "order": 18,
+  "slug": "magikarp-tipo-jurel",
+  "name": "Magikarp tipo jurel",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Magikarp adopta guiños del jurel chileno en esta ilustración. Un cruce con humor entre un Pokémon conocido y un pez familiar en Chile.",
+  "images": [
+    "/assets/art/magikarp-tipo-jurel.webp"
+  ],
+  "options": [],
+  "videos": []
+}

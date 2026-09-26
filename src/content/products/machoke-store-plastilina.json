@@ -1,0 +1,27 @@
+{
+  "id": 17,
+  "order": 17,
+  "slug": "machoke-store-plastilina",
+  "name": "La tienda de Machoke",
+  "price": "Precio por confirmar",
+  "category": "tecnicas-artesanales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Machoke protagoniza una tienda creada en plastilina. El modelado manual añade volumen, color y detalles cotidianos al mundo del personaje.",
+  "images": [
+    "/assets/art/machoke-store-plastilina.webp"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/machoke-store-variante-carta.png"
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/video/video-machoke-store.mp4",
+      "poster": "/assets/art/machoke-store-plastilina.webp",
+      "label": "Video de Machoke store, plastilina"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": 23,
+  "order": 23,
+  "slug": "mew-gameboy",
+  "name": "Mew y la Game Boy",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Ilustración propia de Newen Pintando.",
+  "description": "Mew aparece junto a una Game Boy, un guiño al origen de muchas aventuras Pokémon. La ilustración reúne personaje y nostalgia del juego.",
+  "images": [
+    "/assets/art/mew-gameboy.webp"
+  ],
+  "options": [],
+  "videos": []
+}

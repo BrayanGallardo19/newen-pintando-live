@@ -1,0 +1,363 @@
+# Edición guiada. Las comprobaciones entre fichas se ejecutan antes de compilar.
+media:
+- name: images
+  label: Imágenes
+  input: public/assets
+  output: /assets
+  extensions:
+  - png
+  - jpg
+  - jpeg
+  - webp
+  rename: random
+- name: videos
+  label: Videos MP4
+  input: public/assets/video
+  output: /assets/video
+  extensions:
+  - mp4
+  rename: random
+content:
+- name: site
+  label: Portada y contacto
+  type: file
+  path: src/content/site.json
+  format: json
+  operations:
+    create: false
+    rename: false
+    delete: false
+  fields:
+  - name: name
+    label: Nombre del sitio
+    type: string
+    required: true
+    options:
+      maxlength: 40
+    description: Nombre público que aparece en el encabezado y pie de página.
+  - name: tagline
+    label: Leyenda bajo el logo (máximo 60 caracteres)
+    type: string
+    required: true
+    options:
+      maxlength: 60
+    description: Texto breve bajo el logo. Se muestra también en móvil.
+  - name: whatsapp
+    label: WhatsApp con código de país sin +
+    type: string
+    required: true
+    description: 'Ejemplo: 56912345678. Sin +, espacios ni guiones. Confirma que el número tenga WhatsApp.'
+    pattern:
+      regex: ^[0-9]{8,15}$
+      message: Escribe entre 8 y 15 dígitos, con código de país y sin signos.
+  - name: instagram
+    label: Enlace de Instagram
+    type: string
+    required: true
+    description: Enlace completo del perfil, por ejemplo https://www.instagram.com/tu_cuenta/. Actualiza también
+      el usuario visible.
+    pattern:
+      regex: ^https://(www\.)?instagram\.com(/[A-Za-z0-9._/?=&%#-]*)?$
+      message: Usa un enlace HTTPS de instagram.com, sin espacios.
+  - name: instagramLabel
+    label: Usuario de Instagram
+    type: string
+    options:
+      maxlength: 40
+    description: Texto visible, por ejemplo @tu_cuenta. Debe corresponder al enlace anterior.
+  - name: logo
+    label: Logo
+    type: image
+    required: true
+    options:
+      media: images
+    description: Preferentemente PNG o WebP con transparencia. Máximo 5 MiB.
+  - name: heroLandscape
+    label: Paisaje de portada
+    type: image
+    required: true
+    options:
+      media: images
+    description: Fondo de portada; usa una imagen horizontal. Máximo 5 MiB. No borres el archivo mientras esté en
+      uso.
+  - name: heroTitle
+    label: Título principal
+    type: string
+    required: true
+    options:
+      maxlength: 60
+  - name: heroAccent
+    label: Título destacado
+    type: string
+    options:
+      maxlength: 40
+  - name: heroText
+    label: Texto de portada
+    type: text
+    options:
+      maxlength: 320
+  - name: heroImages
+    label: Imágenes prioritarias del carrusel
+    type: image
+    list:
+      max: 12
+    options:
+      media: images
+    description: Estas imágenes aparecen primero; después se incluyen las demás obras visibles. Vaciar esta lista
+      mantiene el carrusel automático. Se omiten imágenes exclusivas de obras ocultas.
+  - name: showcaseVideos
+    label: Videos generales
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+      max: 6
+    fields:
+    - name: src
+      label: Video MP4
+      type: file
+      required: true
+      options:
+        media: videos
+        extensions:
+        - mp4
+    - name: poster
+      label: Imagen de portada
+      type: image
+      options:
+        media: images
+      description: Imagen opcional para la miniatura. Máximo 5 MiB. En videos de obra se usa su imagen principal
+        si está vacía.
+    - name: label
+      label: Nombre del video
+      type: string
+      options:
+        maxlength: 100
+    description: 'Hasta 6 videos generales, seguidos de los videos de obras visibles. Al ocultar una obra, un video
+      también agregado aquí sigue siendo general. MP4 nuevos: hasta 45 segundos y 25 MiB.'
+- name: categories
+  label: Colecciones y categorías
+  type: collection
+  path: src/content/categories
+  format: json
+  filename:
+    template: '{fields.slug}.json'
+    field: false
+  operations:
+    create: true
+    rename: false
+    delete: true
+  fields:
+  - name: slug
+    label: Identificador estable (minúsculas y guiones)
+    type: string
+    required: true
+    pattern: ^[a-z0-9]+(-[a-z0-9]+)*$
+    options:
+      maxlength: 100
+    description: 'Solo al crear: código único sin tildes ni espacios (ej.: paisajes-del-sur). Después conserva este
+      código; para cambiar el texto público edita Nombre público.'
+  - name: name
+    label: Nombre público
+    type: string
+    required: true
+    options:
+      maxlength: 60
+    description: Puedes cambiar este nombre sin reasignar obras. No uses Todos ni repitas otra categoría.
+  - name: order
+    label: Orden
+    type: number
+    required: true
+    options:
+      min: 0
+    description: Número entero desde 0. Los números menores aparecen primero. No cambia las categorías de las obras.
+  - name: cover
+    label: Portada de la colección (opcional)
+    type: image
+    description: Si la dejas vacía se usa la primera obra visible; si no hay obras, el paisaje de portada. Máximo
+      5 MiB. Una portada elegida aquí se mantiene aunque ocultes la obra que la usa.
+    options:
+      media: images
+  view:
+    primary: name
+    fields:
+    - name
+    - order
+    sort:
+    - order
+    - name
+    default:
+      sort: order
+      order: asc
+  subfolders: false
+- name: products
+  label: Obras
+  type: collection
+  path: src/content/products
+  format: json
+  filename:
+    template: '{fields.slug}.json'
+    field: false
+  operations:
+    create: true
+    rename: false
+    delete: true
+  fields:
+  - name: archived
+    label: Ocultar obra temporalmente
+    type: boolean
+    description: 'Activado: retira la obra del catálogo, carrusel y videos asociados. Desactívalo para restaurarla.
+      Después de publicar, su URL deja de estar disponible. No borra ni vuelve privados los archivos multimedia. Cuenta dentro del máximo de 50 obras.'
+  - name: id
+    label: Número interno único
+    type: number
+    required: true
+    options:
+      min: 1
+    description: 'Solo al crear: usa un entero que no exista (puedes revisar la columna ID). No lo cambies después.
+      No es el orden ni el número de la serie Mew Adventures.'
+  - name: order
+    label: Orden en el catálogo
+    type: number
+    required: true
+    options:
+      min: 0
+    description: 'Entero desde 0; los números menores aparecen primero. Puedes repetir un orden: el número interno
+      desempata.'
+  - name: slug
+    label: Identificador estable (minúsculas y guiones)
+    type: string
+    required: true
+    pattern: ^[a-z0-9]+(-[a-z0-9]+)*$
+    options:
+      maxlength: 100
+    description: 'Solo al crear: código único sin espacios ni tildes. Después conserva este código: forma la URL /obras/identificador/. Cambia Título
+      de la obra para renombrarla públicamente sin romper su enlace.'
+  - name: name
+    label: Título de la obra
+    type: string
+    required: true
+    options:
+      maxlength: 80
+    description: Hasta 80 caracteres. Para Mew Adventures conserva Mew Adventures y el número de la serie.
+  - name: price
+    label: Precio visible o Precio por confirmar
+    type: string
+    required: true
+    options:
+      maxlength: 40
+    description: Texto visible, por ejemplo $15.000 o Precio por confirmar. No calcula pagos; se incluye en la consulta
+      por WhatsApp.
+  - name: category
+    label: Categoría
+    type: reference
+    required: true
+    options:
+      collection: categories
+      value: '{fields.slug}'
+      label: '{fields.name}'
+    description: Elige una categoría existente. Crea la categoría primero. Antes de borrar una categoría, reasigna
+      todas sus obras, incluidas las ocultas.
+  - name: detail
+    label: Resumen alternativo
+    type: text
+    options:
+      maxlength: 240
+    description: Se usa cuando la descripción está vacía. Hasta 240 caracteres.
+  - name: description
+    label: Descripción
+    type: text
+    options:
+      maxlength: 1200
+    description: Descripción que aparece en el modal y junto al video de la obra. Texto simple, hasta 1200 caracteres;
+      no pegues HTML.
+  - name: images
+    label: Imágenes de la obra
+    type: image
+    list:
+      min: 1
+      max: 6
+    options:
+      media: images
+    required: true
+    description: De 1 a 6 imágenes. La primera es la portada de la obra; reordena para cambiarla. Máximo 5 MiB por
+      imagen; recomendado WebP de hasta 1600 px. Las imágenes de variantes se eligen aparte.
+  - name: options
+    label: Variantes (máximo 3)
+    type: object
+    list:
+      max: 3
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: label
+      label: Nombre de la variante
+      type: string
+      required: true
+      options:
+        maxlength: 60
+    - name: price
+      label: Precio o Precio por confirmar
+      type: string
+      required: true
+      options:
+        maxlength: 40
+    - name: image
+      label: Imagen de la variante
+      type: image
+      options:
+        media: images
+    description: Hasta 3 variantes adicionales a Obra original. Nombres diferentes; cada una tiene precio propio.
+      Sin imagen se usa la principal.
+  - name: videos
+    label: Video de la obra (máximo 1, nuevos hasta 45 segundos)
+    type: object
+    list:
+      max: 1
+    fields:
+    - name: src
+      label: Video MP4
+      type: file
+      required: true
+      options:
+        media: videos
+        extensions:
+        - mp4
+    - name: poster
+      label: Imagen de portada
+      type: image
+      options:
+        media: images
+      description: Imagen opcional para la miniatura. Máximo 5 MiB. En videos de obra se usa su imagen principal
+        si está vacía.
+    - name: label
+      label: Descripción del video
+      type: string
+      options:
+        maxlength: 100
+    description: Opcional. MP4 hasta 45 segundos y 25 MiB. Recomendado H.264 con audio AAC. Los nueve originales
+      mantienen la excepción de duración solo si no se reemplazan ni cambian de ruta.
+  view:
+    primary: name
+    fields:
+    - id
+    - name
+    - category
+    - archived
+    - order
+    - price
+    sort:
+    - order
+    - name
+    search:
+    - name
+    - slug
+    - category
+    default:
+      sort: order
+      order: asc
+  subfolders: false
+settings:
+  hide: true
