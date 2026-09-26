@@ -4,6 +4,11 @@ import {join} from 'node:path'
 import {once} from 'node:events'
 import {routes,canonicalRoutes} from '../.ssr/entry-server.js'
 import {createPreviewServer} from './preview.mjs'
+const redirects=await readFile('dist/_redirects','utf8')
+for(const line of redirects.split('\n').filter(line=>line.trim() && !line.startsWith('#'))) {
+ const [source]=line.trim().split(/\s+/)
+ assert.ok(source.startsWith('/') && !source.startsWith('//'),`Workers requiere un origen relativo en _redirects: ${source}`)
+}
 const products=[]
 for(const path of routes) {
  const html=await readFile(join('dist',path,'index.html'),'utf8')

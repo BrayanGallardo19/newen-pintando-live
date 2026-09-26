@@ -118,7 +118,7 @@ npm run preview
 
 Abre `http://127.0.0.1:4174/` para probar la compilación real y las entradas directas. El servidor local incluye noindex en sus respuestas para pruebas; los archivos de `dist` son de producción e indexables. No publiques una copia de ensayo indexable en otro dominio.
 
-Para Cloudflare Pages: comando `npm run build`, carpeta de salida `dist`, Node.js 24. El dominio previsto es `newenpintando.cl`. Configura también `www.newenpintando.cl` en el alojamiento para que la redirección incluida funcione. No agregues una regla general `/* /index.html 200`: ocultaría los errores 404. Si sustituyes el proyecto anterior, elimina su salida de compilación antes de publicar; el build de Vite ya limpia `dist`.
+Para Cloudflare Pages: comando `npm run build`, carpeta de salida `dist`, Node.js 24. El dominio previsto es `newenpintando.cl`. La redirección de `www.newenpintando.cl` al dominio principal debe configurarse en las reglas del dominio de Cloudflare; no se incluye en `_redirects` porque Workers no admite orígenes con dominio en ese archivo. No agregues una regla general `/* /index.html 200`: ocultaría los errores 404. Si sustituyes el proyecto anterior, elimina su salida de compilación antes de publicar; el build de Vite ya limpia `dist`.
 
 Comprueba en el dominio publicado la entrada directa de una obra, su cierre, recarga, Atrás/Adelante, rutas del menú y vista móvil. Revisa `REVISION-RUTAS.md` para conocer las verificaciones realizadas y la limitación del navegador de este entorno.
 
@@ -127,7 +127,7 @@ Comprueba en el dominio publicado la entrada directa de una obra, su cierre, rec
 
 Consulta `REVISION-PREPUBLICACION.md` para los hallazgos corregidos y las verificaciones. Esta entrega se distribuye en tres ZIP independientes: extrae los tres en la misma carpeta padre para reunir `newen-pintando-final`. No uses el antiguo ZIP único dañado. Los videos no se modificaron en esta revisión.
 
-Si usas Cloudflare **Workers con Static Assets**, se incluye `wrangler.jsonc`: compila con `npm run build` y configura el despliegue de `dist` con ese archivo. Su nombre es `newen-pintando-production`; ajústalo solo si tu Worker tiene otro nombre. Usa `404-page`, no el modo `single-page-application`, para conservar las respuestas 404. El dominio se conecta desde el panel de Cloudflare; no hay credenciales ni identificadores de cuenta incluidos.
+Si usas Cloudflare **Workers con Static Assets**, se incluye `wrangler.jsonc`: compila con `npm run build` y configura el despliegue de `dist` con ese archivo. Su nombre es `newen-pintando-live`; ajústalo solo si tu Worker tiene otro nombre. Usa `404-page`, no el modo `single-page-application`, para conservar las respuestas 404. El dominio se conecta desde el panel de Cloudflare; no hay credenciales ni identificadores de cuenta incluidos.
 
 Si usas **Pages**, mantén `npm run build` y salida `dist`; no necesita Wrangler para la integración Git. En ambos casos conecta `newenpintando.cl` y, si usarás www, configura también ese dominio. Las cabeceras generadas deshabilitan la detección ambigua de tipos de archivo y la inclusión en marcos de otros sitios. Si necesitas incrustar la web en un iframe, habrá que revisar `X-Frame-Options` expresamente.
 
@@ -136,3 +136,23 @@ Documentación utilizada para revisar el CMS y el alojamiento:
 - https://pagescms.org/docs/configuration/fields/image/
 - https://developers.cloudflare.com/pages/configuration/headers/
 - https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/
+
+
+### Corrección del despliegue en Workers
+
+El Worker conectado en Cloudflare se llama `newen-pintando-live`; el repositorio puede seguir llamándose `newen-pintando-production`. Son nombres independientes. Mantén el comando de compilación `npm run build` y el de despliegue `npx wrangler deploy`.
+
+El archivo generado `dist/_redirects` contiene únicamente:
+
+```text
+/inicio / 301
+/inicio/ / 301
+```
+
+Workers Static Assets exige rutas de origen relativas. No pongas una URL como `https://www.newenpintando.cl/*` en la primera columna de ese archivo. La prueba `npm run test:routes` ahora detecta este error antes de publicar.
+
+Para configurar www al conectar el dominio: en las reglas de redirección del dominio `newenpintando.cl`, crea una regla con condición `http.host eq "www.newenpintando.cl"`, destino dinámico `concat("https://newenpintando.cl", http.request.uri.path)`, estado **301** y opción de **conservar la cadena de consulta** activada. El registro DNS de www debe pasar por el proxy de Cloudflare. Esta regla se configura en el panel del dominio; no se ha creado desde este proyecto.
+
+La advertencia de esbuild en el registro no fue la causa del fallo mostrado: Vite y la generación de las 40 rutas terminaron correctamente. El fallo bloqueante era el formato de `_redirects`.
+
+Referencia: https://developers.cloudflare.com/workers/static-assets/redirects/

@@ -21,5 +21,5 @@ for(const path of [...routes,'/404.html']) {
 await writeFile('dist/robots.txt','User-agent: *\nAllow: /\nSitemap: https://newenpintando.cl/sitemap.xml\n')
 await writeFile('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+canonicalRoutes.map(path=>`<url><loc>https://newenpintando.cl${path}</loc></url>`).join('\n')+'\n</urlset>\n')
 await writeFile('dist/_headers','/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n/404.html\n  X-Robots-Tag: noindex\n')
-await writeFile('dist/_redirects','https://www.newenpintando.cl/* https://newenpintando.cl/:splat 301\n/inicio / 301\n/inicio/ / 301\n')
+await writeFile('dist/_redirects','/inicio / 301\n/inicio/ / 301\n')
 console.log(`Producción: ${routes.length} rutas + 404; ${canonicalRoutes.length} URLs canónicas.`)

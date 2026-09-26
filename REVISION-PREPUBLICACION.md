@@ -39,3 +39,8 @@ Antes de anunciar la web:
 ## Entrega
 
 Tres ZIP independientes. Extraer los tres en la misma ubicación para formar una única carpeta `newen-pintando-final`. Parte 01 contiene código e imágenes; partes 02 y 03 contienen los nueve videos. El ZIP único anterior quedó descartado por estar truncado.
+
+
+## Corrección posterior a la prueba en Cloudflare
+
+El despliegue real detectó una incompatibilidad que no habían detectado las pruebas locales: Workers Static Assets rechaza dominios en la columna de origen de `_redirects`. Se retiró esa regla, se documentó su configuración como regla del dominio y se añadió una comprobación a `test:routes`. El nombre del Worker se ajustó a `newen-pintando-live`, según el registro de CI. La compilación local no equivale a un despliegue confirmado.
