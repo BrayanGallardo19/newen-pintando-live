@@ -4,7 +4,7 @@
   "whatsapp": "56957864263",
   "instagram": "https://www.instagram.com/newen_pintand0/",
   "instagramLabel": "@newen_pintand0",
-  "logo": "/assets/logo-newen.png",
+  "logo": "/assets/mummz0ue-02rm6odz.png",
   "heroLandscape": "/assets/hero-lago-sur.webp",
   "heroTitle": "Arte que conecta",
   "heroAccent": "con Chile.",
@@ -17,8 +17,8 @@
   "showcaseVideos": [
     {
       "src": "/assets/video/muestra-general.mp4",
-      "label": "Muestra general de trabajos",
-      "poster": "/assets/muestra-general-poster.webp"
+      "poster": "/assets/muestra-general-poster.webp",
+      "label": "Muestra general de trabajos"
     }
   ]
 }
