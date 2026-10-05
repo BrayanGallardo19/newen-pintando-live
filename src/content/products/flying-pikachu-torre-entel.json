@@ -1,0 +1,21 @@
+{
+  "id": 38,
+  "order": 38,
+  "slug": "flying-pikachu-torre-entel",
+  "name": "Pikachu Dinamax volando, Torre Entel",
+  "price": "Precio por confirmar",
+  "category": "chile-ilustrado",
+  "detail": "Pikachu Dinamax volando junto a la Torre Entel.",
+  "description": "Pikachu vuela junto a la Torre Entel en una composición hecha con figuras y detalles de colores.",
+  "images": [
+    "/assets/art/flying-pikachu-torre-entel.jpg"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/flying-pikachu-torre-entel-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

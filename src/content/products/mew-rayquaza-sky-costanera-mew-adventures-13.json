@@ -1,0 +1,21 @@
+{
+  "id": 47,
+  "order": 47,
+  "slug": "mew-rayquaza-sky-costanera-mew-adventures-13",
+  "name": "Mew y Rayquaza en Sky Costanera, Mew Adventures 13",
+  "price": "Precio por confirmar",
+  "category": "mew-adventures",
+  "detail": "Mew y Rayquaza junto a Sky Costanera.",
+  "description": "Rayquaza rodea la torre Sky Costanera mientras Mew aparece en la parte baja de la escena.",
+  "images": [
+    "/assets/art/mew-rayquaza-sky-costanera-mew-adventures-13.webp"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/mew-rayquaza-sky-costanera-mew-adventures-13-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

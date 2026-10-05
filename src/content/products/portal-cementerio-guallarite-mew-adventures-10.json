@@ -1,0 +1,21 @@
+{
+  "id": 40,
+  "order": 40,
+  "slug": "portal-cementerio-guallarite-mew-adventures-10",
+  "name": "Portal del cementerio de Guallarite, Mew Adventures 10",
+  "price": "Precio por confirmar",
+  "category": "mew-adventures",
+  "detail": "Mew y Gengar ante un portal del cementerio.",
+  "description": "Mew y Gengar se encuentran ante un arco de piedra que abre la escena hacia el paisaje.",
+  "images": [
+    "/assets/art/portal-cementerio-guallarite-mew-adventures-10.webp"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/portal-cementerio-guallarite-mew-adventures-10-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": 39,
+  "order": 39,
+  "slug": "lugia-y-articuno",
+  "name": "Lugia y Articuno",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Lugia y Articuno entre montañas nevadas.",
+  "description": "Lugia y Articuno aparecen en un paisaje de montañas y agua bajo un cielo luminoso.",
+  "images": [
+    "/assets/art/lugia-y-articuno.webp"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/lugia-y-articuno-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

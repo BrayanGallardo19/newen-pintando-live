@@ -1,0 +1,15 @@
+{
+  "id": 44,
+  "order": 44,
+  "slug": "totodile-playa",
+  "name": "Totodile en la playa",
+  "price": "Precio por confirmar",
+  "category": "tecnicas-artesanales",
+  "detail": "Totodile en una escena de playa hecha con figuras.",
+  "description": "Totodile aparece en una colorida escena de playa con olas, arena y nubes modeladas.",
+  "images": [
+    "/assets/art/totodile-playa.jpg"
+  ],
+  "options": [],
+  "videos": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": 43,
+  "order": 43,
+  "slug": "psyduck-y-slowpoke-playa",
+  "name": "Psyduck y Slowpoke: un día de descanso en la playa",
+  "price": "Precio por confirmar",
+  "category": "tecnicas-artesanales",
+  "detail": "Psyduck y Slowpoke descansan en la playa.",
+  "description": "Psyduck y Slowpoke protagonizan una escena de descanso en la playa con detalles modelados.",
+  "images": [
+    "/assets/art/psyduck-y-slowpoke-playa.jpg"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/psyduck-y-slowpoke-playa-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

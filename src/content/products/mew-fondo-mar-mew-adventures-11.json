@@ -1,0 +1,21 @@
+{
+  "id": 45,
+  "order": 45,
+  "slug": "mew-fondo-mar-mew-adventures-11",
+  "name": "Mew en el fondo del mar, Mew Adventures 11",
+  "price": "Precio por confirmar",
+  "category": "mew-adventures",
+  "detail": "Mew explora una escena submarina.",
+  "description": "Mew se encuentra entre criaturas marinas y figuras de colores sobre un fondo azul.",
+  "images": [
+    "/assets/art/mew-fondo-mar-mew-adventures-11.jpg"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/mew-fondo-mar-mew-adventures-11-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

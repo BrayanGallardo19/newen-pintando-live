@@ -1,0 +1,21 @@
+{
+  "id": 48,
+  "order": 48,
+  "slug": "psyduck-y-totodile-playa",
+  "name": "Psyduck y Totodile en la playa",
+  "price": "Precio por confirmar",
+  "category": "tecnicas-artesanales",
+  "detail": "Psyduck y Totodile en una escena de playa.",
+  "description": "Psyduck y Totodile comparten una escena de arena, mar y nubes con figuras modeladas.",
+  "images": [
+    "/assets/art/psyduck-y-totodile-playa.jpg"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/psyduck-y-totodile-playa-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

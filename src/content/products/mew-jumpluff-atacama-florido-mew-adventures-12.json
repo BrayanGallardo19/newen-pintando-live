@@ -1,0 +1,21 @@
+{
+  "id": 46,
+  "order": 46,
+  "slug": "mew-jumpluff-atacama-florido-mew-adventures-12",
+  "name": "Mew y Jumpluff en el desierto florido de Atacama, Mew Adventures 12",
+  "price": "Precio por confirmar",
+  "category": "mew-adventures",
+  "detail": "Mew y Jumpluff en el desierto florido de Atacama.",
+  "description": "Mew y Jumpluff recorren un paisaje de montañas y flores inspirado en el desierto florido.",
+  "images": [
+    "/assets/art/mew-jumpluff-atacama-florido-mew-adventures-12.webp"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/mew-jumpluff-atacama-florido-mew-adventures-12-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

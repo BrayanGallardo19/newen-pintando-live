@@ -1,0 +1,21 @@
+{
+  "id": 41,
+  "order": 41,
+  "slug": "oshawott-nadando-en-el-mar",
+  "name": "Oshawott nadando en el mar",
+  "price": "Precio por confirmar",
+  "category": "tecnicas-artesanales",
+  "detail": "Oshawott en una escena marina hecha con figuras.",
+  "description": "Oshawott nada entre olas y figuras marinas sobre un fondo azul.",
+  "images": [
+    "/assets/art/oshawott-nadando-en-el-mar.jpg"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/oshawott-nadando-en-el-mar-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

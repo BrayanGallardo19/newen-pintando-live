@@ -1,0 +1,15 @@
+{
+  "id": 42,
+  "order": 42,
+  "slug": "psyduck-y-slowbro-playa",
+  "name": "Psyduck y Slowbro en la playa",
+  "price": "Precio por confirmar",
+  "category": "tecnicas-artesanales",
+  "detail": "Psyduck y Slowbro disfrutan de una escena de playa.",
+  "description": "Una composición de playa con Psyduck y Slowbro entre nubes, arena y pequeños detalles modelados.",
+  "images": [
+    "/assets/art/psyduck-y-slowbro-playa.jpg"
+  ],
+  "options": [],
+  "videos": []
+}
