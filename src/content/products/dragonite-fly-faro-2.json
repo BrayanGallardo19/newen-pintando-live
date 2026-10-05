@@ -1,4 +1,5 @@
 {
+  "archived": true,
   "id": 9,
   "order": 9,
   "slug": "dragonite-fly-faro-2",
@@ -9,7 +10,5 @@
   "description": "Dragonite vuelve a encontrarse con el faro en una nueva composición. El vuelo y la referencia costera aportan movimiento a la escena.",
   "images": [
     "/assets/art/dragonite-fly-faro-2.webp"
-  ],
-  "options": [],
-  "videos": []
+  ]
 }
