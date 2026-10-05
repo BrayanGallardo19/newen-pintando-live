@@ -10,6 +10,12 @@
   "images": [
     "/assets/art/eevee-y-cubone.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/eevee-cubone-carta-2026.png"
+    }
+  ],
   "videos": []
 }

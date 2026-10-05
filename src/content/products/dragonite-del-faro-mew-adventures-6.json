@@ -10,6 +10,12 @@
   "images": [
     "/assets/art/dragonite-del-faro-mew-adventures-6.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/mew-dragonite-del-faro-carta-2026.png"
+    }
+  ],
   "videos": []
 }

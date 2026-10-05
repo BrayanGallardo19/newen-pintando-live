@@ -10,6 +10,12 @@
   "images": [
     "/assets/art/mew-geoglifos-mew-adventures-8.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/mew-adventures-8-carta-2026.png"
+    }
+  ],
   "videos": []
 }

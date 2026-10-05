@@ -10,6 +10,12 @@
   "images": [
     "/assets/art/budew-infernal.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/budew-infernal-carta-2026.png"
+    }
+  ],
   "videos": []
 }

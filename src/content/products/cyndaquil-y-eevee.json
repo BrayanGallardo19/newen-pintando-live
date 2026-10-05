@@ -1,0 +1,21 @@
+{
+  "id": 37,
+  "order": 37,
+  "slug": "cyndaquil-y-eevee",
+  "name": "Cyndaquil y Eevee",
+  "price": "Precio por confirmar",
+  "category": "disenos-especiales",
+  "detail": "Cyndaquil y Eevee en un paisaje ilustrado.",
+  "description": "Cyndaquil y Eevee comparten una escena de árboles, cielo expresivo y un sendero que atraviesa el paisaje.",
+  "images": [
+    "/assets/art/cyndaquil-y-eevee.webp"
+  ],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/cyndaquil-eevee-carta-2026.png"
+    }
+  ],
+  "videos": []
+}

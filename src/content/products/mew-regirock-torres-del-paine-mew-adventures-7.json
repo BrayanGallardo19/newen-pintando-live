@@ -10,7 +10,18 @@
   "images": [
     "/assets/art/mew-regirock-torres-del-paine-mew-adventures-7.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta EX",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/mew-regirock-torres-del-paine-carta-ex-2026.png"
+    },
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/mew-regirock-torres-del-paine-carta-2026.png"
+    }
+  ],
   "videos": [
     {
       "src": "/assets/video/mew-regirock-torres-del-paine.mp4",

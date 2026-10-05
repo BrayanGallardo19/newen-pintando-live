@@ -10,6 +10,12 @@
   "images": [
     "/assets/art/charcadet-y-evos-castillo-en-ruinas.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/charcadet-y-evos-carta-2026.png"
+    }
+  ],
   "videos": []
 }

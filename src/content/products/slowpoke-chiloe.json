@@ -10,7 +10,13 @@
   "images": [
     "/assets/art/slowpoke-chiloe.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/slowpoke-chiloe-carta-2026.png"
+    }
+  ],
   "videos": [
     {
       "src": "/assets/video/video-slowpoke-pescando.mp4",

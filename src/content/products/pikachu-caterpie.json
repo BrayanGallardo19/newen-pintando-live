@@ -10,7 +10,13 @@
   "images": [
     "/assets/art/pikachu-caterpie.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/pikachu-caterpie-carta-2026.png"
+    }
+  ],
   "videos": [
     {
       "src": "/assets/video/pikachu-caterpie.mp4",

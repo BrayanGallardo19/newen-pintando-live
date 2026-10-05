@@ -10,7 +10,13 @@
   "images": [
     "/assets/art/jigglipuff-concert-bordado.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/jigglypuff-concierto-carta-2026.png"
+    }
+  ],
   "videos": [
     {
       "src": "/assets/video/jigglypuff-bordado-concierto.mp4",

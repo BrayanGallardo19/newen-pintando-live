@@ -10,6 +10,12 @@
   "images": [
     "/assets/art/umbreon-torre-entel.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/umbreon-torre-entel-carta-2026.png"
+    }
+  ],
   "videos": []
 }

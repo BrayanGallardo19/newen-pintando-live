@@ -10,6 +10,12 @@
   "images": [
     "/assets/art/mano-del-desierto-wobbufet-psyduck.webp"
   ],
-  "options": [],
+  "options": [
+    {
+      "label": "Carta",
+      "price": "Precio por confirmar",
+      "image": "/assets/cards/mano-del-desierto-deoxys-wobbuffet-carta-2026.png"
+    }
+  ],
   "videos": []
 }
