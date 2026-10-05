@@ -1,6 +1,7 @@
 {
-  "id": 48,
-  "order": 48,
+  "archived": false,
+  "id": 36,
+  "order": 36,
   "slug": "psyduck-y-totodile-playa",
   "name": "Psyduck y Totodile en la playa",
   "price": "Precio por confirmar",
@@ -16,6 +17,5 @@
       "price": "Precio por confirmar",
       "image": "/assets/cards/psyduck-y-totodile-playa-carta-2026.png"
     }
-  ],
-  "videos": []
+  ]
 }
